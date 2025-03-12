@@ -6,11 +6,11 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\PostController;
 
 
-Route::get('/form', [PostController::class, 'index']);
-Route::post('/form', [PostController::class, 'store']);
-Route::delete('/form', [PostController::class, 'delete']);
-Route::put('/form', [PostController::class, 'update']);
-Route::patch('/form', [PostController::class, 'patch']);
+Route::get('/index', [PostController::class, 'index']);
+Route::post('/store', [PostController::class, 'store']);
+Route::delete('/delete', [PostController::class, 'delete']);
+Route::put('/update', [PostController::class, 'update']);
+Route::patch('/patch', [PostController::class, 'patch']);
 
 
 

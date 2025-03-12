@@ -9,27 +9,27 @@
     <h1>Laravel Form Methods</h1>
 
 
-    <form action="/form" method="GET">
+    <form action="/index" method="GET">
         <input type="text" name="name" placeholder="Ismingiz">
         <input type="text" name="email" placeholder="Email">
         <button type="submit">GET Request</button>
     </form>
 
-    <form action="/form" method="POST">
+    <form action="/store" method="POST">
         @csrf
         <input type="text" name="name" placeholder="Ismingiz">
         <input type="text" name="email" placeholder="Email">
         <button type="submit">POST Request</button>
     </form>
 
-    <form action="/form" method="POST">
+    <form action="/delete" method="POST">
         @csrf
         @method('DELETE')
         <input type="text" name="id" placeholder="ID ni kiriting">
         <button type="submit">DELETE Request</button>
     </form>
 
-    <form action="/form" method="POST">
+    <form action="/update" method="POST">
         @csrf
         @method('PUT')
         <input type="text" name="name" placeholder="Yangi ismingiz">
@@ -38,7 +38,7 @@
         
     </form>
 
-    <form action="/form" method="POST">
+    <form action="/patch" method="POST">
         @csrf
         @method('PATCH')
         <input type="text" name="name" placeholder="Yangi Ism">
